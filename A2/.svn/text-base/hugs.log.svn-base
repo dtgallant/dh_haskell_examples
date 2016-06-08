@@ -1,0 +1,38 @@
+__   __ __  __  ____   ___      _________________________________________
+||   || ||  || ||  || ||__      Hugs 98: Based on the Haskell 98 standard
+||___|| ||__|| ||__||  __||     Copyright (c) 1994-2003
+||---||         ___||           World Wide Web: http://haskell.org/hugs
+||   ||                         Report bugs to: hugs-bugs@haskell.org
+||   || Version: November 2003  _________________________________________
+
+Haskell 98 mode: Restart with command line option -98 to enable extensions
+
+Type :? for help
+Prelude> :load AssocListTest.hs   
+AssocListTest> test1
+True
+AssocListTest> test2
+[("jan",31),("mar",31),("apr",30),("may",31),("jun",30),
+("jul",31),("aug",31),("sep",30),("oct",31),("nov",30),("dec",31),("feb",28)]
+AssocListTest> test3
+[("jan",31),("feb",29),("mar",31),("apr",30),("may",31),
+("jun",30),("jul",31),("aug",31),("sep",30),("oct",31),("nov",30),("dec",31),("dave",8)]
+AssocListTest> test4
+[("jan",31),("feb",29),("apr",30),("may",31),("jun",30),
+("jul",31),("aug",31),("sep",30),("oct",31),("nov",30),("dec",31)]
+AssocListTest> test5
+[("jan",31),("feb",29),("mar",31),("apr",30),("may",31),
+("jun",30),("jul",31),("aug",31),("sep",30),("oct",31),("nov",30),("dec",31)]
+AssocListTest> test6
+True
+AssocListTest> test7
+False
+AssocListTest> test8
+[31]
+AssocListTest> test9
+
+Program error: no record found
+
+AssocListTest> :load
+Prelude> :quit
+[Leaving Hugs]
